@@ -14,8 +14,8 @@ export const ModelCards = () => {
         <div className="section-subheading">Building the future</div>
 
         <div className=" flex gap-[20px] my-[48px] flex-wrap justify-center">
-          {dummyExploreCardData.slice(0, 4).map((data) => (
-            <div className="card">
+          {dummyExploreCardData.slice(0, 4).map((data, i) => (
+            <div className="card" key={i}>
               <img src={data.img} alt="" className="card-img" />
               <div className="card-footer">
                 <div className="card-title">{data.title}</div>

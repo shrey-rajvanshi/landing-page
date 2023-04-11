@@ -5,8 +5,8 @@ export const Explore = () => {
   return (
     <>
       <div className="explore-wrapper flex flex-wrap gap-[30px] justify-center py-[50px]">
-        {dummyExploreCardData.map((data) => (
-          <div className="card cursor-pointer">
+        {dummyExploreCardData.map((data, i) => (
+          <div key={i} className="card cursor-pointer">
             <img src={data.img} alt="" className="card-img" />
             <div className="card-footer">
               <div className="card-title">{data.title}</div>
