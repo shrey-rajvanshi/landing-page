@@ -1,16 +1,4 @@
 @tailwind components;
 
 @layer components {
-  .topbar-container {
-    @apply flex flex-row  w-[98vw];
-    @apply px-[136px] pt-[30px] items-center justify-end;
-  }
-
-  .topbar-items {
-    @apply flex flex-row gap-[30px] items-center;
-    @apply text-[18px] font-[500];
-  }
-  .topbar-items > button {
-    @apply font-[500];
-  }
 }

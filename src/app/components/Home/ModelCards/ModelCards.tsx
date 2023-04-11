@@ -9,12 +9,12 @@ export const ModelCards = () => {
   //   const [mapIndex, setMapIndex] = useState(4);
   return (
     <>
-      <div classNameName="card-container">
-        {/* <div classNameName="section-gradient-heading">The Executive Team</div>
+      {/* <div classNameName="card-container"> */}
+      {/* <div classNameName="section-gradient-heading">The Executive Team</div>
         <div classNameName="section-subheading">Building the future</div> */}
 
-        <div classNameName=" flex gap-[20px] my-[48px] flex-wrap justify-center">
-          {/* {dummyExploreCardData.slice(0, 4).map((data, i) => (
+      {/* <div classNameName=" flex gap-[20px] my-[48px] flex-wrap justify-center"> */}
+      {/* {dummyExploreCardData.slice(0, 4).map((data, i) => (
             <div classNameName="card" key={i}>
               <img src={data.img} alt="" classNameName="card-img" />
               <div classNameName="card-footer">
@@ -28,11 +28,11 @@ export const ModelCards = () => {
               </div>
             </div>
           ))} */}
-        </div>
-        {/* <a href="https://stage.segmind.com/serverless/explore">
+      {/* </div> */}
+      {/* <a href="https://stage.segmind.com/serverless/explore">
           <button classNameName="btn btn-primary">Explore more </button>
         </a> */}
-      </div>
+      {/* // </div> */}
 
       {/* <div classNameName="card-container mt-[64px]">
         <div classNameName="section-gradient-heading">The Executive Team</div>
@@ -84,7 +84,10 @@ export const ModelCards = () => {
 
       <section className="py-12 bg-white sm:py-16 lg:py-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 text-center gap-y-10 md:grid-cols-3 md:text-left">
+          <h2 className="max-w-[32rem] mx-auto text-5xl font-bold text-gray-900 lg:mx-0 mb-12">
+            Features✨
+          </h2>
+          <div className="grid grid-cols-1  text-center gap-y-10 md:grid-cols-3 md:text-left">
             <div className="md:pr-6 lg:pr-12">
               <svg
                 className="mx-auto text-gray-900 md:mx-0"
@@ -152,64 +155,20 @@ export const ModelCards = () => {
         </div>
       </section>
 
-      {/* <section className="py-12 bg-white sm:py-16 lg:py-20">
+      <section className="py-12 bg-white sm:py-16 lg:py-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold text-gray-900 font-pj">
-                You are not alone. The pain of website creation is real
+            <div className="flex justify-start w-full">
+              <h2 className="max-w-[32rem] mx-auto text-5xl font-bold text-gray-900 lg:mx-0 ">
+                User Testimonials✨
               </h2>
             </div>
 
-            <div className="flex flex-col items-center justify-center mt-8 sm:space-x-5 sm:flex-row md:order-3 md:mt-16">
-              <a
-                href="#"
-                title=""
-                className="inline-flex items-center justify-center w-full px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                role="button"
-              >
-                Request a demo
-              </a>
-
-              <a
-                href="#"
-                title=""
-                className="
-                        inline-flex
-                        items-center
-                        justify-center
-                        w-full
-                        px-6
-                        py-3
-                        mt-4
-                        text-lg
-                        font-bold
-                        text-gray-900
-                        transition-all
-                        duration-200
-                        border-2 border-gray-400
-                        sm:w-auto sm:mt-0
-                        rounded-xl
-                        font-pj
-                        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900
-                        hover:bg-gray-900
-                        focus:bg-gray-900
-                        hover:text-white
-                        focus:text-white
-                        hover:border-gray-900
-                        focus:border-gray-900
-                    "
-                role="button"
-              >
-                Get started for free
-              </a>
-            </div>
-
-            <div className="relative mt-8 md:mt-16 md:order-2">
+            <div className="relative mt-2 md:mt-16 md:order-2">
               <div className="absolute -inset-1">
                 <div
                   className="w-full h-full max-w-full opacity-30 blur-lg filter"
-                  style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"
+                  // style={{background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"}}
                 ></div>
               </div>
 
@@ -300,7 +259,7 @@ export const ModelCards = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };
