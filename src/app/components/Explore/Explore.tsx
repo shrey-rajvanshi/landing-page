@@ -1,5 +1,9 @@
 import { dummyExploreCardData } from "./DummyModelData.js";
 import "./explore.css";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import Image from "next/image.js";
+import picture from "../../../../public/picture1.jpg";
+import Link from "next/link.js";
 
 export const Explore = () => {
   return (
@@ -25,104 +29,50 @@ export const Explore = () => {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-end lg:justify-between">
             <div className="max-w-md mx-auto text-center lg:text-left lg:mx-0">
-              <h2 className="text-3xl font-bold text-gray-900">
-                Explore Models
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900">Model hub</h2>
               <p className="mt-6 text-base font-medium text-gray-500">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Elementum tortor cum dictum nulla.
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="flex w-full gap-6 pb-8 mt-12 overflow-x-auto sm:mt-16 snap-x justify-center">
-          <div className="relative snap-start scroll-ml-6 shrink-0 first:pl-6 last:pr-6">
-            <img
-              className="h-auto w-[332px]"
-              src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/gallery/2/image-1.png"
-              alt=""
-            />
-            <p className="mt-5 text-base font-bold text-gray-600">Handx Opr</p>
+          <div className="grid grid-cols-1 mt-12 text-center sm:px-16 md:px-0 md:gap-x-8 gap-y-12 md:text-left md:grid-cols-3">
+            {dummyExploreCardData.map((model, i) => {
+              return (
+                <>
+                  <div>
+                    <img
+                      className="w-full rounded-md h-[376px] object-cover"
+                      src={model.img}
+                      alt=""
+                    />
+                    <div className="flex items-center  mt-7 justify-between">
+                      <p className="text-lg font-bold text-gray-900">
+                        {model.title}
+                      </p>
+                      <span className="inline-flex items-center  items-center justify-center px-2 pr-3 py-1 text-sm font-semibold leading-5 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 ">
+                        ⚡0.5 latency
+                      </span>
+                    </div>
+                    <p className="mt-3 text-sm font-medium text-gray-500">
+                      @Jenny wilson, you will face many defeats in life, but
+                      never let yourself be defeated
+                    </p>
+                    <div className="mt-6">
+                      <Link
+                        href={`/explore/${i}`}
+                        title=""
+                        className="inline-flex gap-[10px] items-center justify-center px-5 py-3 text-xs font-bold tracking-widest text-gray-900 uppercase transition-all duration-200 bg-transparent border border-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:border-gray-900 hover:bg-gray-900 hover:text-white"
+                        role="button"
+                      >
+                        Try Model <AiOutlineArrowRight />
+                      </Link>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
           </div>
-
-          <div className="relative snap-start scroll-ml-6 shrink-0 first:pl-6 last:pr-6">
-            <img
-              className="h-auto w-[332px]"
-              src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/gallery/2/image-2.png"
-              alt=""
-            />
-            <p className="mt-5 text-base font-bold text-gray-600">Handx Opr</p>
-          </div>
-
-          <div className="relative snap-start scroll-ml-6 shrink-0 first:pl-6 last:pr-6">
-            <img
-              className="h-auto w-[332px]"
-              src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/gallery/2/image-3.png"
-              alt=""
-            />
-            <p className="mt-5 text-base font-bold text-gray-600">Handx Opr</p>
-          </div>
-
-          {/*<div className="relative snap-start scroll-ml-6 shrink-0 first:pl-6 last:pr-6">
-            <img
-              className="h-auto w-[332px]"
-              src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/gallery/2/image-4.png"
-              alt=""
-            />
-            <p className="mt-5 text-base font-bold text-gray-600">Handx Opr</p>
-          </div>
-
-          <div className="relative snap-start scroll-ml-6 shrink-0 first:pl-6 last:pr-6">
-            <img
-              className="h-auto w-[332px]"
-              src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/gallery/2/image-5.png"
-              alt=""
-            />
-            <p className="mt-5 text-base font-bold text-gray-600">Handx Opr</p>
-          </div> */}
-        </div>
-
-        <div className="flex items-center justify-center mt-4 space-x-3 lg:hidden">
-          <button
-            type="button"
-            className="p-1.5 -m-1.5 text-gray-300 transition-all duration-200 rounded-full hover:text-gray-600 hover:bg-gray-100"
-          >
-            <svg
-              className="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M10 19l-7-7m0 0l7-7m-7 7h18"
-              />
-            </svg>
-          </button>
-
-          <button
-            type="button"
-            className="p-1.5 -m-1.5 text-gray-300 transition-all duration-200 rounded-full hover:text-gray-600 hover:bg-gray-100"
-          >
-            <svg
-              className="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-          </button>
         </div>
       </section>
     </>

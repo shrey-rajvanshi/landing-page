@@ -1,6 +1,12 @@
 @tailwind components;
 
 @layer components {
+  .button-active {
+    @apply btn border bg-[#000] text-[#fff] border-black;
+  }
+  .button {
+    @apply btn border border-black text-[#000];
+  }
   .doc-container {
     @apply px-[136px] py-[20px];
   }

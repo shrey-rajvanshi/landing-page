@@ -1,6 +1,6 @@
 "use client";
 
-import { ModelDetailPage } from "./ModelDetail";
+import { ModelDetailPage } from "@/app/model/ModelDetail";
 
 const page = () => {
   return (

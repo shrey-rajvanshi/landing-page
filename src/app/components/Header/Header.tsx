@@ -1,4 +1,5 @@
 import "./header.css";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -9,8 +10,8 @@ export const Header = () => {
             <div className="flex-shrink-0">
               <a href="#" title="" className="flex">
                 <img
-                  className=""
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
+                  className="w-[150px]"
+                  src="https://stage.segmind.com/img/segmind-white-full.066fc4ce.svg"
                   alt=""
                 />
               </a>
@@ -54,33 +55,32 @@ export const Header = () => {
               </button>
             </div>
 
-            <nav className="hidden lg:items-center lg:ml-16 lg:mr-auto lg:space-x-16 lg:flex">
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                Explore
-              </a>
-
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                Pricing
-              </a>
-
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                Documentation
-              </a>
-            </nav>
-
             <nav className="hidden lg:flex lg:items-center lg:justify-end lg:space-x-10">
+              <nav className="hidden lg:items-center lg:ml-16 lg:mr-auto lg:space-x-16 lg:flex">
+                <Link
+                  href="/explore"
+                  title=""
+                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  Model Hub
+                </Link>
+
+                <a
+                  href="#"
+                  title=""
+                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  Pricing
+                </a>
+
+                <a
+                  href="#"
+                  title=""
+                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  Documentation
+                </a>
+              </nav>
               {/* <a
                 href="#"
                 title=""
